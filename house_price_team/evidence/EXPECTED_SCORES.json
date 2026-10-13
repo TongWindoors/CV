@@ -1,0 +1,10 @@
+{
+  "source": "evidence/historical_METHODS.csv, same 5118 image keys/folds",
+  "mse": {
+    "baseline": 81845.244293631,
+    "v1": 77861.05184989246,
+    "v3": 68046.79974088613,
+    "v2": 76311.7698428122
+  },
+  "v2": "Recomputed on same1706 x3 folds in evidence/current_reproduction; not old experiment split."
+}

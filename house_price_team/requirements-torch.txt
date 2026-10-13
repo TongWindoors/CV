@@ -1,0 +1,5 @@
+# Official PyTorch CUDA 12.8 index; matches the cloud-tested package versions.
+# Source: https://pytorch.org/get-started/previous-versions/#v271
+# Python 3.11/3.12, Windows x86_64; NVIDIA driver must support this CUDA build.
+torch==2.7.1+cu128
+torchvision==0.22.1+cu128

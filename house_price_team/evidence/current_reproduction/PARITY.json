@@ -1,0 +1,27 @@
+{
+  "comparisons": [
+    {
+      "method": "baseline",
+      "expected_historical_mse": 81845.244293631,
+      "current_mse": 81845.25033712624,
+      "absolute_difference": 0.00604349524655845,
+      "within_0_1": true
+    },
+    {
+      "method": "v1",
+      "expected_historical_mse": 77861.05184989246,
+      "current_mse": 77861.05840274291,
+      "absolute_difference": 0.006552850449224934,
+      "within_0_1": true
+    },
+    {
+      "method": "v3",
+      "expected_historical_mse": 68046.79974088613,
+      "current_mse": 68046.7997408861,
+      "absolute_difference": 2.9103830456733704e-11,
+      "within_0_1": true
+    }
+  ],
+  "identical_features_expected": true,
+  "not_gpu_accuracy_validation": true
+}

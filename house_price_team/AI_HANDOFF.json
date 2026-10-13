@@ -1,0 +1,93 @@
+{
+  "artifact": "COMP90086 A4 teammate reproduction handoff",
+  "version": "team-reproduction-20261013",
+  "intended_host": "Windows 10/11 x64; NVIDIA optional for frozen re-extraction",
+  "read_first": [
+    "README.md",
+    "METHODS.json",
+    "docs/REPORT_PLAN.md",
+    "evidence/current_reproduction/SCORES.csv",
+    "MODEL_SOURCES.json"
+  ],
+  "entrypoints": {
+    "four_versions": "00_START.cmd",
+    "one_version": [
+      "10_BASELINE.cmd",
+      "11_V1.cmd",
+      "12_V2.cmd",
+      "13_V3.cmd"
+    ],
+    "gpu_features": "01_GPU_REEXTRACT.cmd",
+    "gpu_features_regression": "03_GPU_COMPARE.cmd",
+    "collect": "COLLECT_RESULTS.cmd"
+  },
+  "data_contract": {
+    "train_labels": 8000,
+    "test_images": 3000,
+    "oof_pool": 5118,
+    "fold_sizes": [
+      1706,
+      1706,
+      1706
+    ],
+    "supervised_fit_each_fold": 3412,
+    "historical_calibration": 1280,
+    "historical_development": 1599,
+    "excluded_near_development": 3,
+    "split_file": "data/ROWS.csv",
+    "submission_schema": [
+      "imageid",
+      "price"
+    ],
+    "image_id_order": "original data/test.csv",
+    "sample_solution_target_read": false
+  },
+  "version_mapping": {
+    "baseline": {
+      "historical_method": "A1",
+      "main_change": "DINO-register-L336 + linear Ridge"
+    },
+    "v1": {
+      "historical_method": "A4",
+      "main_change": "same feature -> RBF KRR"
+    },
+    "v2": {
+      "historical_method": "fixed existing three-DINO recipe; newly matched folds",
+      "main_change": "same KRR -> multiple DINO feature distances"
+    },
+    "v3": {
+      "historical_method": "S0",
+      "main_change": "same KRR -> additional SigLIP2-L256 visual features"
+    }
+  },
+  "compute_roles": {
+    "gpu": "Frozen encoder forward pass only for optional raw-image re-extraction",
+    "cpu": "Re-fit supervised Ridge/KRR coefficients; not merely read precomputed predictions"
+  },
+  "known_negative_evidence": [
+    "GPU frozen-head/MLP/last-four fine-tuning/LoRA completed previously; see evidence/historical_METHODS.csv",
+    "Full-parameter fine-tuning study has no returned completed outcome yet"
+  ],
+  "eligibility": {
+    "pretrained_features": "Permitted in assignment",
+    "baseline_scratch_required": false,
+    "siglip2": "Image-text pretrained visual tower; instructor-specific classification under MLLM ban not confirmed",
+    "vision_only_alternative": "v2"
+  },
+  "interpretation": {
+    "not_kaggle_scores": true,
+    "historical_hyperparameter_selection": true,
+    "historical_split_reuse": true,
+    "no_universal_finetuning_claim": true,
+    "no_claim_gpu_alone_improves_mse": true,
+    "new_report_numbers_not_old_zip_version_numbers": true
+  },
+  "distribution": {
+    "full_release_zip": "HOUSE_PRICE_TEAM_FULL.zip",
+    "source_only_zip": "HOUSE_PRICE_TEAM_GITHUB_SOURCE.zip",
+    "full_zip_contains_course_images": true,
+    "not_school_submission_zip": true,
+    "publish_full_as": "private GitHub Release asset, not regular Git content"
+  },
+  "failure_evidence": "TEAM_RESULTS.zip status is authoritative; failed/interrupted/delivery_failed cannot be counted as complete."
+}

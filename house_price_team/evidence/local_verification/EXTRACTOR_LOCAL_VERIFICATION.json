@@ -1,0 +1,69 @@
+{
+  "status": "probe_complete",
+  "rows": 2,
+  "hardware": {
+    "device": "cpu",
+    "name": "CPU mechanical probe",
+    "torch": "2.7.1",
+    "cuda": null,
+    "precision": "FP32",
+    "versions": {
+      "torchvision": "0.22.1",
+      "transformers": "4.56.2",
+      "safetensors": "0.8.0",
+      "pillow": "11.3.0",
+      "numpy": "2.2.6"
+    }
+  },
+  "probe_only": true,
+  "sources_sha256": "6ac13425c599863f8b9d41b0d8ae92416a78b3864634177d525f768012788c71",
+  "extractor_sha256": "1694f3be73a76edfd24ed5d9023e5bdfc9885a805a4c4eff7669245aad595cf6",
+  "checks": {
+    "register_large336": {
+      "n": 2,
+      "max_absolute_difference": 1.7642974853515625e-05,
+      "rmse": 2.732098801416025e-06,
+      "mean_cosine_similarity": 0.9999999999883256,
+      "atol": 0.001,
+      "rtol": 0.001,
+      "within_fp32_tolerance": true,
+      "interpretation": "Numerical reproduction only; no claim of predictive improvement or backbone training."
+    },
+    "b448": {
+      "n": 2,
+      "max_absolute_difference": 3.814697265625e-05,
+      "rmse": 8.618523638158443e-06,
+      "mean_cosine_similarity": 0.9999999999789633,
+      "atol": 0.001,
+      "rtol": 0.001,
+      "within_fp32_tolerance": true,
+      "interpretation": "Numerical reproduction only; no claim of predictive improvement or backbone training."
+    },
+    "l336": {
+      "n": 2,
+      "max_absolute_difference": 3.0100345611572266e-05,
+      "rmse": 6.052961685905557e-06,
+      "mean_cosine_similarity": 0.9999999999846609,
+      "atol": 0.001,
+      "rtol": 0.001,
+      "within_fp32_tolerance": true,
+      "interpretation": "Numerical reproduction only; no claim of predictive improvement or backbone training."
+    },
+    "full": {
+      "n": 2,
+      "max_absolute_difference": 2.956390380859375e-05,
+      "rmse": 3.227860469863869e-06,
+      "mean_cosine_similarity": 0.9999999999877738,
+      "atol": 0.001,
+      "rtol": 0.001,
+      "within_fp32_tolerance": true,
+      "interpretation": "Numerical reproduction only; no claim of predictive improvement or backbone training."
+    }
+  },
+  "mechanical_unit_tests_passed": 17,
+  "cuda_executed": false,
+  "mps_available": false,
+  "network_download_test": "Mock HTTP range/resume/mirror/SHA tests; actual multi-GB download not executed",
+  "notes": "Two canonical first/last images, all4 actual pretrained weights on CPU; no model fitting or MSE claim",
+  "final_probe_directory": "verification/cpu_probe_final"
+}

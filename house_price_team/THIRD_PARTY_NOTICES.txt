@@ -1,0 +1,6 @@
+This is a private educational reproduction package, not a grant of rights to the course dataset.
+The original dataset and course rules remain applicable. Do not include the course image directories in the school code submission.
+Bundled Python: Astral python-build-standalone CPython 3.11.13, official pinned distribution. Its upstream licenses are retained in the archive.
+Bundled scientific-Python wheels retain their upstream .dist-info license/metadata. See WHEELHOUSE_MANIFEST.json for identities.
+No DINO or SigLIP model weights are bundled; MODEL_SOURCES.json records official pinned sources and hashes. Downloaded model licenses and model cards govern their use.
+Project scripts are the team-specific reproduction implementation; this package does not assign an open-source license to all course assets.

@@ -1,0 +1,16 @@
+# Python 3.11/3.12 x64: cached-feature regression needs no PyTorch or CUDA.
+numpy==2.2.6
+scipy==1.16.3
+pandas==2.3.2
+pillow==11.3.0
+tqdm==4.67.1
+scikit-learn==1.7.2
+threadpoolctl==3.7.0
+# Pin transitive base dependencies so the bundled Windows wheels fully resolve offline.
+joblib==1.6.0
+python-dateutil==2.9.0.post0
+pytz==2026.5
+tzdata==2026.5
+six==1.17.0
+colorama==0.4.6
+cloudpickle==3.1.2

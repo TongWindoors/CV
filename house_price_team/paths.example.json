@@ -1,0 +1,11 @@
+{
+  "dataset": "assets/dataset",
+  "features": "assets/features",
+  "rows": "data/ROWS.csv",
+  "models": {
+    "register_large336": "D:/pretrained/dinov2-with-registers-large",
+    "b448": "D:/pretrained/dinov2-base",
+    "l336": "D:/pretrained/dinov2-large",
+    "full": "D:/pretrained/siglip2-large-patch16-256"
+  }
+}

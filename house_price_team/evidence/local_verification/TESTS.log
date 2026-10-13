@@ -1,0 +1,85 @@
+test_cmd_modes_and_exit_codes (test_bootstrap.BootstrapContract.test_cmd_modes_and_exit_codes) ... ok
+test_offline_manifest_before_pip_and_online_fallback (test_bootstrap.BootstrapContract.test_offline_manifest_before_pip_and_online_fallback) ... ok
+test_powershell_encoding_and_failure_record (test_bootstrap.BootstrapContract.test_powershell_encoding_and_failure_record) ... ok
+test_powershell_syntax_without_execution (test_bootstrap.BootstrapContract.test_powershell_syntax_without_execution) ... skipped 'No PowerShell parser available; Windows execution remains unverified'
+test_requirements_match_expected_runtime (test_bootstrap.BootstrapContract.test_requirements_match_expected_runtime) ... ok
+test_scoped_installation_and_optional_cuda (test_bootstrap.BootstrapContract.test_scoped_installation_and_optional_cuda) ... ok
+test_verified_runtime_before_extract_execute (test_bootstrap.BootstrapContract.test_verified_runtime_before_extract_execute) ... ok
+test_accepts_complete_bound_numerical_reproduction (test_generated_feature_gate.GeneratedGateTests.test_accepts_complete_bound_numerical_reproduction) ... ok
+test_rejects_changed_preprocessing_and_canonical_rows (test_generated_feature_gate.GeneratedGateTests.test_rejects_changed_preprocessing_and_canonical_rows) ... ok
+test_rejects_probe_or_missing_branch (test_generated_feature_gate.GeneratedGateTests.test_rejects_probe_or_missing_branch) ... ok
+test_rejects_reference_asset_substitution (test_generated_feature_gate.GeneratedGateTests.test_rejects_reference_asset_substitution) ... ok
+test_rejects_tampered_npz (test_generated_feature_gate.GeneratedGateTests.test_rejects_tampered_npz) ... ok
+test_all_models_roundtrip_from_portable_numeric_state (test_reproduction.RegressionContracts.test_all_models_roundtrip_from_portable_numeric_state) ... ok
+test_assessment_labels_cannot_change_predictions (test_reproduction.RegressionContracts.test_assessment_labels_cannot_change_predictions) ... ok
+test_delivery_failure_cannot_leave_success_or_old_zip (test_reproduction.RegressionContracts.test_delivery_failure_cannot_leave_success_or_old_zip) ... Traceback (most recent call last):
+  File "<ORIGINAL_PROJECT>/output/team_reproduction_20261013/house_price_team/run_experiments.py", line 246, in run
+    rows,raw,binding=load(root,args.features); save(out/'INPUT_BINDING.json',binding)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+ValueError: injected input failure
+[FAILED] Result export failed: disk full. See /private<LOCAL_TEMP>
+ok
+test_failure_archives_evidence_and_never_publishes_complete (test_reproduction.RegressionContracts.test_failure_archives_evidence_and_never_publishes_complete) ... Traceback (most recent call last):
+  File "<ORIGINAL_PROJECT>/output/team_reproduction_20261013/house_price_team/run_experiments.py", line 246, in run
+    rows,raw,binding=load(root,args.features); save(out/'INPUT_BINDING.json',binding)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+ValueError: injected mismatch
+[results] /private<LOCAL_TEMP>
+状态：failed
+特征缓存复现；回归权重重新训练；没有视觉骨干微调。
+同一历史 5118 张/3 折；不是 Kaggle 分数。
+
+全量重拟合完成：False
+ValueError: injected mismatch
+
+ok
+test_fit_assessment_overlap_is_rejected (test_reproduction.RegressionContracts.test_fit_assessment_overlap_is_rejected) ... ok
+test_group_leakage_and_nonfinite_labels_rejected (test_reproduction.RegressionContracts.test_group_leakage_and_nonfinite_labels_rejected) ... ok
+test_pairing_rejects_missing_or_wrong_oof_keys (test_reproduction.RegressionContracts.test_pairing_rejects_missing_or_wrong_oof_keys) ... ok
+test_unit_conversion_and_paired_sign (test_reproduction.RegressionContracts.test_unit_conversion_and_paired_sign) ... ok
+test_weighted_kernel_matches_concatenated_scaled_features (test_reproduction.RegressionContracts.test_weighted_kernel_matches_concatenated_scaled_features) ... ok
+test_cache_refuses_overlap_and_changed_binding (test_team_extract.Tests.test_cache_refuses_overlap_and_changed_binding) ... ok
+test_cache_resume_detects_committed_corruption (test_team_extract.Tests.test_cache_resume_detects_committed_corruption) ... ok
+test_download_mirror_fallback_and_no_overwrite (test_team_extract.Tests.test_download_mirror_fallback_and_no_overwrite) ... [下载] model，已保存 0.0 MiB；来源 bad.test
+[下载重试] network unavailable
+[下载] model，已保存 0.0 MiB；来源 bad.test
+[下载重试] network unavailable
+[下载] model，已保存 0.0 MiB；来源 good.test
+[下载] model 0.0/0.0 MiB
+ok
+test_download_resume_and_checksum (test_team_extract.Tests.test_download_resume_and_checksum) ... [下载] model，已保存 0.0 MiB；来源 example.test
+[下载] model 0.0/0.0 MiB
+ok
+test_export_preserves_existing_feature_and_provenance (test_team_extract.Tests.test_export_preserves_existing_feature_and_provenance) ... ok
+test_letterbox_zeros_padding_and_preserves_valid_area (test_team_extract.Tests.test_letterbox_zeros_padding_and_preserves_valid_area) ... ok
+test_no_price_or_fold_columns_read (test_team_extract.Tests.test_no_price_or_fold_columns_read) ... ok
+test_readout_skips_registers_and_respects_mask (test_team_extract.Tests.test_readout_skips_registers_and_respects_mask) ... ok
+test_reference_id_hash_alignment (test_team_extract.Tests.test_reference_id_hash_alignment) ... ok
+test_siglip_preprocessing_matches_torchvision (test_team_extract.Tests.test_siglip_preprocessing_matches_torchvision) ... ok
+test_stop_guard (test_team_extract.Tests.test_stop_guard) ... ok
+test_wrong_range_is_never_appended (test_team_extract.Tests.test_wrong_range_is_never_appended) ... [下载] model，已保存 0.0 MiB；来源 example.test
+[下载重试] Server returned an incompatible byte range; refusing mixed bytes
+[下载] model，已保存 0.0 MiB；来源 example.test
+[下载重试] Server returned an incompatible byte range; refusing mixed bytes
+ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 3.528s
+
+OK (skipped=1)

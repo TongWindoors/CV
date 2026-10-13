@@ -1,0 +1,35 @@
+[
+  {
+    "comparison": "v1 minus baseline",
+    "delta_mse": -3984.1919343833188,
+    "descriptive_95pct": [
+      -5374.038144823643,
+      -2523.6569669947926
+    ],
+    "bootstrap_groups": 5114,
+    "draws": 2000,
+    "scope": "Conditional on historical predictions; excludes retraining/model-selection uncertainty; negative favors candidate."
+  },
+  {
+    "comparison": "v2 minus baseline",
+    "delta_mse": -5533.480494314044,
+    "descriptive_95pct": [
+      -7130.411537008624,
+      -3850.2626593306186
+    ],
+    "bootstrap_groups": 5114,
+    "draws": 2000,
+    "scope": "Conditional on historical predictions; excludes retraining/model-selection uncertainty; negative favors candidate."
+  },
+  {
+    "comparison": "v3 minus baseline",
+    "delta_mse": -13798.450596240138,
+    "descriptive_95pct": [
+      -15773.157703185596,
+      -11917.66986848573
+    ],
+    "bootstrap_groups": 5114,
+    "draws": 2000,
+    "scope": "Conditional on historical predictions; excludes retraining/model-selection uncertainty; negative favors candidate."
+  }
+]

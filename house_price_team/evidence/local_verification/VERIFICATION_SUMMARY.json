@@ -1,0 +1,34 @@
+{
+  "status": "local_checks_passed",
+  "regression": {
+    "real_images_feature_rows": 11000,
+    "oof_rows_each": 5118,
+    "methods": 4,
+    "matched_folds": 3,
+    "test_predictions_each": 3000,
+    "full_refits": 4,
+    "mse": [
+      81845.25033712624,
+      77861.05840274291,
+      76311.7698428122,
+      68046.7997408861
+    ],
+    "device": "CPU",
+    "source": "evidence/current_reproduction/"
+  },
+  "tests": {
+    "discovered": 33,
+    "passed": 32,
+    "skipped": 1,
+    "skip_reason": "No PowerShell parser configured in this aggregate run"
+  },
+  "windows_offline_dependencies_resolve": true,
+  "python_runtime_archive_sha256": "a3a2f8ac71045d7bcf80366a7ec2cc5a1ba08112182a59e5df08a10242b8460a",
+  "raw_input_checks": "All11000 original image fingerprints verified during assembly",
+  "gpu_encoder_cpu_probe": "2 actual images through all4 actual pretrained encoders; fp32 maxdiff<=3.8147e-5",
+  "windows_execution_performed": false,
+  "cuda_execution_performed": false,
+  "large_model_network_download_executed": false,
+  "current_runner_finalize_recheck": "V2 three-fold cache run completed after logging/source-gate/finalization fixes",
+  "log_redactions": "Only sender-specific absolute paths redacted; measurements unchanged"
+}

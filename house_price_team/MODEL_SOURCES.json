@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "models": {
+    "register_large336": {
+      "repo": "facebook/dinov2-with-registers-large",
+      "revision": "e4c89a4e05589de9b3e188688a303d0f3c04d0f3",
+      "family": "dino",
+      "size": 336,
+      "hidden_size": 1024,
+      "register_tokens": 4,
+      "feature_dim": 2048,
+      "files": {
+        "config.json": {
+          "sha256": "03eee42f646659a9480f8911a81fdd81efeedd7ff39083c8e36398068daf72f5",
+          "bytes": 1003
+        },
+        "model.safetensors": {
+          "sha256": "edccedab2c4e164e80833096de89a32a6e8d7365870499a066a61dbc8894b42b",
+          "bytes": 1217539376
+        },
+        "preprocessor_config.json": {
+          "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+          "bytes": 436
+        }
+      },
+      "accepted_local_weights": [
+        {
+          "sha256": "edccedab2c4e164e80833096de89a32a6e8d7365870499a066a61dbc8894b42b",
+          "bytes": 1217539376
+        }
+      ],
+      "license": "Apache-2.0",
+      "trust_remote_code": false,
+      "preprocessing": "EXIF RGB; resize whole image preserving aspect ratio; BICUBIC; centered letterbox; ImageNet normalization; zero normalized padding",
+      "readout": "CLS followed by valid-area-weighted mean of spatial patch tokens; skip CLS and register tokens"
+    },
+    "b448": {
+      "repo": "facebook/dinov2-base",
+      "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+      "family": "dino",
+      "size": 448,
+      "hidden_size": 768,
+      "register_tokens": 0,
+      "feature_dim": 1536,
+      "files": {
+        "config.json": {
+          "sha256": "f7ff4cfa73d2f70647dbf6950541ad25d73082d54c2e7e9bded160c7656b2a70",
+          "bytes": 548
+        },
+        "model.safetensors": {
+          "sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+          "bytes": 346345912
+        },
+        "preprocessor_config.json": {
+          "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+          "bytes": 436
+        }
+      },
+      "accepted_local_weights": [
+        {
+          "sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+          "bytes": 346345912
+        }
+      ],
+      "license": "Apache-2.0",
+      "trust_remote_code": false,
+      "preprocessing": "EXIF RGB; resize whole image preserving aspect ratio; BICUBIC; centered letterbox; ImageNet normalization; zero normalized padding",
+      "readout": "CLS followed by valid-area-weighted mean of spatial patch tokens; skip CLS and register tokens"
+    },
+    "l336": {
+      "repo": "facebook/dinov2-large",
+      "revision": "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c",
+      "family": "dino",
+      "size": 336,
+      "hidden_size": 1024,
+      "register_tokens": 0,
+      "feature_dim": 2048,
+      "files": {
+        "config.json": {
+          "sha256": "12df51c069a2dc1305e34ba71ef58bc2407ea553b75f4722a1715c1bce3bbed0",
+          "bytes": 549
+        },
+        "model.safetensors": {
+          "sha256": "399fba97a95f22c36834418bc69373364a99af3a1153da1c0fb31db567c92e23",
+          "bytes": 1217522888
+        },
+        "preprocessor_config.json": {
+          "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+          "bytes": 436
+        }
+      },
+      "accepted_local_weights": [
+        {
+          "sha256": "399fba97a95f22c36834418bc69373364a99af3a1153da1c0fb31db567c92e23",
+          "bytes": 1217522888
+        }
+      ],
+      "license": "Apache-2.0",
+      "trust_remote_code": false,
+      "preprocessing": "EXIF RGB; resize whole image preserving aspect ratio; BICUBIC; centered letterbox; ImageNet normalization; zero normalized padding",
+      "readout": "CLS followed by valid-area-weighted mean of spatial patch tokens; skip CLS and register tokens"
+    },
+    "full": {
+      "repo": "google/siglip2-large-patch16-256",
+      "revision": "787800c8990e6f058423089178e718139608408c",
+      "family": "siglip",
+      "size": 256,
+      "hidden_size": 1024,
+      "register_tokens": 0,
+      "feature_dim": 2048,
+      "files": {
+        "config.json": {
+          "sha256": "172e39dbf0143b8fe22d2f08921730eb8c397967e58cb37d133161e28aa34104",
+          "bytes": 537
+        },
+        "model.safetensors": {
+          "sha256": "fa34f822f016dbb167d8d0e3a8af99b5e199aa28573360d4295252b9ec418e2a",
+          "bytes": 3526204360
+        },
+        "preprocessor_config.json": {
+          "sha256": "d14ba2ee3fd816f3de8abaddc31953565128eaf37c73ad4bed32101a98465aff",
+          "bytes": 394
+        }
+      },
+      "accepted_local_weights": [
+        {
+          "sha256": "fa34f822f016dbb167d8d0e3a8af99b5e199aa28573360d4295252b9ec418e2a",
+          "bytes": 3526204360
+        },
+        {
+          "sha256": "89165230aebb0e92528b40d084e3e4ac41180ab8a0a05a75f2340b000c134f16",
+          "bytes": 1263873840,
+          "kind": "previously verified byte-exact vision-only repack"
+        }
+      ],
+      "license": "Apache-2.0",
+      "trust_remote_code": false,
+      "preprocessing": "EXIF RGB; full image stretch 256x256 BILINEAR; mean/std .5; no center crop",
+      "readout": "attention pooler_output followed by mean of all 256 spatial patch tokens",
+      "upstream_full_digest_note": "Pinned upstream LFS digest; downloader verifies complete file SHA before use. Prior local extraction verified the vision-only payload, not the entire upstream file."
+    }
+  },
+  "download_hosts": [
+    "https://hf-mirror.com",
+    "https://huggingface.co"
+  ],
+  "all_backbones_frozen": true,
+  "features_raw_fp32": true,
+  "no_text_tower_inference": true,
+  "no_house_price_targets_in_extractor": true,
+  "course_eligibility": "SigLIP2 is a contrastively pretrained vision tower; teacher approval remains a separate requirement. No claim that the course explicitly allows it."
+}

@@ -1,0 +1,6 @@
+# Additional packages only for optional GPU feature re-extraction.
+# Install requirements.txt and requirements-torch.txt first.
+transformers==4.56.2
+huggingface-hub==0.34.4
+safetensors==0.8.0
+tokenizers==0.22.2

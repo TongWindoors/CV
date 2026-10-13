@@ -1,0 +1,76 @@
+{
+  "purpose": "Byte-identical existing frozen features consolidated by key; no labels used for extraction.",
+  "source_assets": {
+    "model_sha256": {
+      "sha256": "89165230aebb0e92528b40d084e3e4ac41180ab8a0a05a75f2340b000c134f16",
+      "bytes": 1263873840
+    },
+    "model_config_sha256": {
+      "sha256": "172e39dbf0143b8fe22d2f08921730eb8c397967e58cb37d133161e28aa34104",
+      "bytes": 537
+    },
+    "old_extractor_sha256": {
+      "sha256": "3ce48d455bfc4e37d6aefbdee1217a9f487e29488a4ed861bdbeccd1809c7e1c",
+      "bytes": 19226
+    },
+    "old_rows_sha256": {
+      "sha256": "26abe031d41664bdcd991e5a666284f48e73aeadd9710a696365e2639b7e2c76",
+      "bytes": 453369
+    },
+    "old_dino_sha256": {
+      "sha256": "39593948a34d81b8a573089c162f6a4686548bc873ff9ef4479b7042cf0ff5d1",
+      "bytes": 107784459
+    },
+    "old_full_sha256": {
+      "sha256": "08e4b0e3aeb2998c9bf010a2a88e2b38660af26126136205c15df2e507008791",
+      "bytes": 54255812
+    },
+    "rows_sha256": {
+      "sha256": "aab9fb348c13a12701a39c2f1fc0ba3be0d8d9cb12ce767820042d63480d987c",
+      "bytes": 1289595
+    },
+    "test_ids_sha256": {
+      "sha256": "aed4754a0e77fad4fcad549c709eb27caf20bda8feb214fd8e19cc520ebe566b",
+      "bytes": 28009
+    },
+    "dino_extra_sha256": {
+      "sha256": "2851ff921bf17fd0cdfc62248bd18fc58ffc56f0ab060f7b777f8eb9cd8b8bdb",
+      "bytes": 123873716
+    },
+    "full_extra_sha256": {
+      "sha256": "55459f4a53166950bceefb241754ac42d516701f964b60e1e04060b7c34ae923",
+      "bytes": 35185751
+    },
+    "train_csv_sha256": {
+      "sha256": "6a37aec7c596d98a2342aae32b0cf2eb660e56c92292fd1c324961ca5d8653d5",
+      "bytes": 118058
+    },
+    "test_csv_sha256": {
+      "sha256": "3b204c0887200c43fc7ff7e5e0f897b7b82ea16cf2387d55b3bf31759db57de9",
+      "bytes": 31010
+    },
+    "dino_model_sha256": {
+      "sha256": "edccedab2c4e164e80833096de89a32a6e8d7365870499a066a61dbc8894b42b",
+      "bytes": 1217539376
+    },
+    "dino_model_config_sha256": {
+      "sha256": "03eee42f646659a9480f8911a81fdd81efeedd7ff39083c8e36398068daf72f5",
+      "bytes": 1003
+    }
+  },
+  "fold_sha256": "160d16df5dc7e919c2de9384d1326bba1cd8fae8b9ecbdc67da63c5ec2b3b294",
+  "group_split_seed": 20261012,
+  "partition_counts": {
+    "inner_train": 5118,
+    "test": 3000,
+    "historical_development": 1599,
+    "inner_calibration": 1280,
+    "excluded_near_development": 3
+  },
+  "fold_counts": {
+    "0": 1706,
+    "1": 1706,
+    "2": 1706
+  },
+  "all_image_sha256_verified": true
+}

@@ -1,0 +1,60 @@
+{
+  "files": {
+    "numpy-2.2.6-cp311-cp311-win_amd64.whl": {
+      "sha256": "e8213002e427c69c45a52bbd94163084025f533a55a59d6f9c5b820774ef3303",
+      "bytes": 12907455
+    },
+    "scipy-1.16.3-cp311-cp311-win_amd64.whl": {
+      "sha256": "53c3844d527213631e886621df5695d35e4f6a75f620dca412bcd292f6b87d78",
+      "bytes": 38722107
+    },
+    "pandas-2.3.2-cp311-cp311-win_amd64.whl": {
+      "sha256": "9467697b8083f9667b212633ad6aa4ab32436dcbaf4cd57325debb0ddef2012f",
+      "bytes": 11336557
+    },
+    "pillow-11.3.0-cp311-cp311-win_amd64.whl": {
+      "sha256": "1a992e86b0dd7aeb1f053cd506508c0999d710a8f07b4c791c63843fc6a807ac",
+      "bytes": 6986055
+    },
+    "tqdm-4.67.1-py3-none-any.whl": {
+      "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2",
+      "bytes": 78540
+    },
+    "scikit_learn-1.7.2-cp311-cp311-win_amd64.whl": {
+      "sha256": "9b7ed8d58725030568523e937c43e56bc01cadb478fc43c042a9aca1dacb3ba1",
+      "bytes": 8894244
+    },
+    "threadpoolctl-3.7.0-py3-none-any.whl": {
+      "sha256": "cd8b60b5641b45c67bbf73c64c843235fc2d8a480c87389f52f5dbee893b86be",
+      "bytes": 26362
+    },
+    "joblib-1.6.0-py3-none-any.whl": {
+      "sha256": "3dbbf9f6e4b592a2357b854608e980fe6390d131d7a82f011a377ef2ebef7aba",
+      "bytes": 306115
+    },
+    "python_dateutil-2.9.0.post0-py2.py3-none-any.whl": {
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "bytes": 229892
+    },
+    "pytz-2026.5-py2.py3-none-any.whl": {
+      "sha256": "e658af3757f9e26a9d25dd2aff38335acd92bc9104f890a894b2c1ba28311b03",
+      "bytes": 506342
+    },
+    "tzdata-2026.5-py2.py3-none-any.whl": {
+      "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+      "bytes": 347996
+    },
+    "six-1.17.0-py2.py3-none-any.whl": {
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "bytes": 11050
+    },
+    "colorama-0.4.6-py2.py3-none-any.whl": {
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "bytes": 25335
+    },
+    "cloudpickle-3.1.2-py3-none-any.whl": {
+      "bytes": 22228,
+      "sha256": "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a"
+    }
+  }
+}

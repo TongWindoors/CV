@@ -1,0 +1,65 @@
+{
+  "version": "team-reproduction-20261013",
+  "methods": {
+    "baseline": {
+      "label": "单个冻结 DINOv2-register-L/336 + Ridge",
+      "historical": "A1",
+      "regressor": "ridge",
+      "alpha": 0.3,
+      "weights": {
+        "register_large336": 1.0
+      }
+    },
+    "v1": {
+      "label": "同一个冻结 DINO + RBF KRR",
+      "historical": "A4",
+      "regressor": "krr",
+      "alpha": 0.3,
+      "gamma": 2.0,
+      "weights": {
+        "register_large336": 1.0
+      }
+    },
+    "v2": {
+      "label": "三个冻结 DINO 表征融合 + 同一 KRR",
+      "historical": "Existing fixed DINO mixture; matched folds recomputed for handoff",
+      "regressor": "krr",
+      "alpha": 0.3,
+      "gamma": 2.0,
+      "weights": {
+        "dino": 1.0
+      }
+    },
+    "v3": {
+      "label": "DINO 融合 + SigLIP2-L 视觉表征 + 同一 KRR",
+      "historical": "S0",
+      "regressor": "krr",
+      "alpha": 0.3,
+      "gamma": 2.0,
+      "weights": {
+        "dino": 0.5,
+        "full": 0.5
+      }
+    }
+  },
+  "dino_distance_weights": {
+    "register_large336": 0.4,
+    "b448": 0.15,
+    "l336": 0.45
+  },
+  "normalization": "Each of two feature blocks row-L2 normalized, divided by sqrt(2). Float64 regression.",
+  "kernel": "exp(-gamma * sum(weight * squared_distance)) then training-only centering",
+  "target": "Original price unit from train.csv (1000 USD); train-only mean/std for linear Ridge.",
+  "price_lower_clip": 1.0,
+  "report_numbering_not_old_release_numbers": true,
+  "folds": {
+    "pool": 5118,
+    "outer_folds": 3,
+    "fit_per_fold": 3412,
+    "validation_per_fold": 1706,
+    "names_file": "data/ROWS.csv"
+  },
+  "historical_selection_caveat": "Splits, hyperparameters and mixture weights have been researched previously; not a new blind validation.",
+  "gpu_role": "Optional frozen visual encoding; no vision weight updates in these four methods.",
+  "final_refit": "Fit each fixed method once on all 8000 training labels; predict original 3000 test IDs. No model selection from test labels/scores."
+}
